@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { data } from '../../data/data';
+import { Container, ButtonContainer, Pre, Button } from './Card.styled';
 
 export const Card = () => {
   const [disabled, setDisabled] = useState(false);
@@ -30,31 +31,35 @@ export const Card = () => {
   };
 
   return (
-    <div>
+    <Container>
       <h2>{`Вопрос №${id}`}</h2>
       <h2>{question}</h2>
 
-      <pre>
+      <Pre>
         <code>{codeExample}</code>
-      </pre>
-      {possiblAnswer.map((answer, index) => {
-        return (
-          <button
-            onClick={handelClick}
-            className="btn"
-            id="answer"
-            disabled={disabled}
-            data-answer={answer}
-            key={index}
-          >
-            {answer}
-          </button>
-        );
-      })}
+      </Pre>
+
+      <ButtonContainer>
+        {possiblAnswer.map((answer, index) => {
+          return (
+            <Button
+              onClick={handelClick}
+              // className="btn"
+              id="answer"
+              disabled={disabled}
+              data-answer={answer}
+              key={index}
+            >
+              {answer}
+            </Button>
+          );
+        })}
+      </ButtonContainer>
+
       <br />
       <button type="button" onClick={handelClickNextBtn}>
         Сдедующий вопрос
       </button>
-    </div>
+    </Container>
   );
 };
