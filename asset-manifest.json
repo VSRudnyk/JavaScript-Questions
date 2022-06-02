@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/JavaScript-Questions/static/css/main.1e2e5c90.css",
-    "main.js": "/JavaScript-Questions/static/js/main.03efb2b7.js",
+    "main.js": "/JavaScript-Questions/static/js/main.2e9f5781.js",
     "index.html": "/JavaScript-Questions/index.html",
     "main.1e2e5c90.css.map": "/JavaScript-Questions/static/css/main.1e2e5c90.css.map",
-    "main.03efb2b7.js.map": "/JavaScript-Questions/static/js/main.03efb2b7.js.map"
+    "main.2e9f5781.js.map": "/JavaScript-Questions/static/js/main.2e9f5781.js.map"
   },
   "entrypoints": [
     "static/css/main.1e2e5c90.css",
-    "static/js/main.03efb2b7.js"
+    "static/js/main.2e9f5781.js"
   ]
 }
