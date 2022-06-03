@@ -8,6 +8,7 @@ import {
   QuestionNumber,
   NextBtn,
   Question,
+  Background,
 } from './Card.styled';
 
 export const Card = () => {
@@ -39,32 +40,34 @@ export const Card = () => {
   };
 
   return (
-    <Container>
-      <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
-      <Question>{question}</Question>
+    <Background>
+      <Container>
+        <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
+        <Question>{question}</Question>
 
-      <Pre>{codeExample}</Pre>
+        <Pre>{codeExample}</Pre>
 
-      <ButtonContainer>
-        {possiblAnswer.map((answer, index) => {
-          return (
-            <Button
-              onClick={handelClick}
-              // className="btn"
-              id="answer"
-              disabled={disabled}
-              data-answer={answer}
-              key={index}
-            >
-              {answer}
-            </Button>
-          );
-        })}
-      </ButtonContainer>
+        <ButtonContainer>
+          {possiblAnswer.map((answer, index) => {
+            return (
+              <Button
+                onClick={handelClick}
+                // className="btn"
+                id="answer"
+                disabled={disabled}
+                data-answer={answer}
+                key={index}
+              >
+                {answer}
+              </Button>
+            );
+          })}
+        </ButtonContainer>
 
-      <NextBtn type="button" onClick={handelClickNextBtn}>
-        Далее
-      </NextBtn>
-    </Container>
+        <NextBtn type="button" onClick={handelClickNextBtn}>
+          Далее
+        </NextBtn>
+      </Container>
+    </Background>
   );
 };

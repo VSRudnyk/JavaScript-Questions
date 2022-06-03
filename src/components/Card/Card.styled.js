@@ -9,8 +9,7 @@ export const Container = styled.div`
   padding-left: 10px;
   padding-right: 10px;
   height: 100vh;
-  background-size: contain;
-  background-image: url(${background});
+
   /* background-image: url('../../image/background.jpg'); */
 
   @media screen and (min-width: 320px) {
@@ -79,4 +78,9 @@ export const NextBtn = styled.button`
 export const Question = styled.h2`
   margin-top: 10px;
   margin-bottom: 25px;
+`;
+
+export const Background = styled.div`
+  background-size: cover;
+  background-image: url(${background});
 `;
