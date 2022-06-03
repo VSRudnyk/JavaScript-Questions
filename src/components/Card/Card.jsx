@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import { data } from '../../data/data';
-import { Container, ButtonContainer, Pre, Button } from './Card.styled';
+import {
+  Container,
+  ButtonContainer,
+  Pre,
+  Button,
+  QuestionNumber,
+} from './Card.styled';
 
 export const Card = () => {
   const [disabled, setDisabled] = useState(false);
@@ -32,12 +38,10 @@ export const Card = () => {
 
   return (
     <Container>
-      <h2>{`Вопрос №${id}`}</h2>
+      <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
       <h2>{question}</h2>
 
-      <Pre>
-        <code>{codeExample}</code>
-      </Pre>
+      <Pre>{codeExample}</Pre>
 
       <ButtonContainer>
         {possiblAnswer.map((answer, index) => {

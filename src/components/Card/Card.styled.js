@@ -32,10 +32,18 @@ export const ButtonContainer = styled.div`
 export const Pre = styled.pre`
   @media screen and (min-width: 320px) {
     font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 `;
 
 export const Button = styled.button`
   display: block;
   height: 40px;
+`;
+
+export const QuestionNumber = styled.h2`
+  margin-top: 15px;
+  font-size: 15px;
 `;
