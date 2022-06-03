@@ -3,11 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100vh;
 
   @media screen and (min-width: 320px) {
-    width: 310px;
+    width: 300px;
   }
 
   @media screen and (min-width: 768px) {
@@ -21,10 +22,11 @@ export const Container = styled.div`
 
 export const ButtonContainer = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 50%;
   gap: 4px;
-  position: relative;
+  position: absolute;
   bottom: 0;
+  width: inherit;
 `;
 
 export const Pre = styled.pre`
@@ -34,5 +36,6 @@ export const Pre = styled.pre`
 `;
 
 export const Button = styled.button`
-  padding: 16px;
+  display: block;
+  height: 40px;
 `;

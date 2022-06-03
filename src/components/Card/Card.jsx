@@ -56,7 +56,6 @@ export const Card = () => {
         })}
       </ButtonContainer>
 
-      <br />
       <button type="button" onClick={handelClickNextBtn}>
         Сдедующий вопрос
       </button>
