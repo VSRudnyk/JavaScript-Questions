@@ -14,7 +14,7 @@ export const data = [
   },
   {
     id: '2',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample:
       'for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1)\n}\n\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1)\n}',
     possiblAnswer: [
@@ -27,7 +27,7 @@ export const data = [
   },
   {
     id: '3',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample:
       'const shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2\n  },\n  perimeter: () => 2 * Math.PI * this.radius\n}\n\nconsole.log(shape.diameter())\nconsole.log(shape.perimeter())',
     possiblAnswer: [
@@ -40,14 +40,14 @@ export const data = [
   },
   {
     id: '4',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: 'console.log(+true)\nconsole.log(!"John")',
     possiblAnswer: ['1 и false', '0 и true', 'false и NaN', 'false и false'],
     correctAnswer: '1 и false',
   },
   {
     id: '5',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample:
       'let c = { greeting: "Hey!" }\nlet d\n\nd = c\nc.greeting = "Hello!"\nconsole.log(d.greeting)',
     possiblAnswer: ['Hello!', 'Hey!', 'undefined', 'ошибка'],
@@ -55,7 +55,7 @@ export const data = [
   },
   {
     id: '6',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample:
       'let a = 3\nlet b = new Number(3)\nlet c = 3\n\nconsole.log(a == b)\nconsole.log(a === b)\nconsole.log(b === c)',
     possiblAnswer: [
@@ -68,7 +68,7 @@ export const data = [
   },
   {
     id: '7',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample:
       'class Chameleon {\n  static colorChange(newColor) {\n    this.newColor = newColor\n    return this.newColor\n  }\n\n  constructor({ newColor = "green" } = {}) {\n    this.newColor = newColor\n  }\n}\n\nconst freddie = new Chameleon({ newColor: "pink" })\nfreddie.colorChange("orange")',
     possiblAnswer: ['orange', 'pink', 'green', 'ошибка'],
@@ -76,7 +76,7 @@ export const data = [
   },
   {
     id: '8',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: `// обратите внимание: код выполняется в нестрогом режиме
       let greeting
       greetign = {} // опечатка!
@@ -86,77 +86,77 @@ export const data = [
   },
   {
     id: '9',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '10',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '11',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '12',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '13',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '14',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '15',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '16',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '17',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '18',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
   },
   {
     id: '19',
-    question: 'Каким будет вывод2?',
+    question: 'Каким будет вывод?',
     codeExample: '',
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',

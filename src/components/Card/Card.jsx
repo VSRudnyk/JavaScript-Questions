@@ -6,6 +6,8 @@ import {
   Pre,
   Button,
   QuestionNumber,
+  NextBtn,
+  Question,
 } from './Card.styled';
 
 export const Card = () => {
@@ -39,7 +41,7 @@ export const Card = () => {
   return (
     <Container>
       <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
-      <h2>{question}</h2>
+      <Question>{question}</Question>
 
       <Pre>{codeExample}</Pre>
 
@@ -60,9 +62,9 @@ export const Card = () => {
         })}
       </ButtonContainer>
 
-      <button type="button" onClick={handelClickNextBtn}>
-        Сдедующий вопрос
-      </button>
+      <NextBtn type="button" onClick={handelClickNextBtn}>
+        Далее
+      </NextBtn>
     </Container>
   );
 };
