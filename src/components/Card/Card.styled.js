@@ -10,8 +10,8 @@ export const Container = styled.div`
   padding-right: 10px;
   height: 100vh;
 
-  @media screen and (min-width: 320px) {
-    width: 300px;
+  @media screen and (min-width: 360px) {
+    width: 340px;
   }
 
   @media screen and (min-width: 480px) {
@@ -38,9 +38,10 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  /* display: block; */
-  /* height: 70px; */
-  padding: 12px;
+  cursor: pointer;
+  display: block;
+  height: 50px;
+
   border-radius: 8px;
   border: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -54,22 +55,16 @@ export const QuestionNumber = styled.h2`
 `;
 
 export const NextBtn = styled.button`
+  cursor: pointer;
   position: absolute;
-  right: 10px;
-  bottom: 130px;
-  padding: 8px;
+  right: 0;
+  top: -60px;
+  padding: 12px;
   border-radius: 8px;
   border: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  @media screen and (min-width: 320px) {
-    bottom: 140px;
-  }
-
-  @media screen and (min-width: 480px) {
-    bottom: 150px;
-  }
 `;
 
 export const Question = styled.h2`
@@ -83,15 +78,15 @@ export const Background = styled.div`
 `;
 
 export const CodeExmpContainer = styled.div`
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 6px;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;

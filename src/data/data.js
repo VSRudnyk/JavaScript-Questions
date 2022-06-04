@@ -8,9 +8,9 @@ export const data = [
   <span class="hljs-built_in" style="color: rgb(0, 134, 179);">console</span>.log(age)
   <span class="hljs-keyword" style="color: rgb(149, 65, 33);">var</span> name = <span class="hljs-string" style="color: rgb(33, 145, 97);">"John"</span>
   <span class="hljs-keyword" style="color: rgb(149, 65, 33);">let</span> age = <span class="hljs-number" style="color: rgb(64, 160, 112);">30</span>
-  }
-  
-  sayHi()</pre>
+}
+
+sayHi()</pre>
     `,
     possiblAnswer: [
       'John и undefined',
@@ -25,12 +25,12 @@ export const data = [
     question: 'Каким будет вывод?',
     codeExample: `
     <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(0, 0, 0); background: rgb(248, 248, 255);"><span class="hljs-keyword" style="color: rgb(149, 65, 33);">for</span> (var i = <span class="hljs-number" style="color: rgb(64, 160, 112);">0</span>; i &lt; <span class="hljs-number" style="color: rgb(64, 160, 112);">3</span>; i++) {
-    setTimeout(<span class="hljs-function"><span class="hljs-params" style="color: rgb(0, 0, 255);">()</span> =&gt;</span> <span class="hljs-built_in" style="color: rgb(0, 134, 179);">console</span>.log(i), <span class="hljs-number" style="color: rgb(64, 160, 112);">1</span>)
-  }
+  setTimeout(<span class="hljs-function"><span class="hljs-params" style="color: rgb(0, 0, 255);">()</span> =&gt;</span> <span class="hljs-built_in" style="color: rgb(0, 134, 179);">console</span>.log(i), <span class="hljs-number" style="color: rgb(64, 160, 112);">1</span>)
+}
 
-  <span class="hljs-keyword" style="color: rgb(149, 65, 33);">for</span> (let i = <span class="hljs-number" style="color: rgb(64, 160, 112);">0</span>; i &lt; <span class="hljs-number" style="color: rgb(64, 160, 112);">3</span>; i++) {
-    setTimeout(<span class="hljs-function"><span class="hljs-params" style="color: rgb(0, 0, 255);">()</span> =&gt;</span> <span class="hljs-built_in" style="color: rgb(0, 134, 179);">console</span>.log(i), <span class="hljs-number" style="color: rgb(64, 160, 112);">1</span>)
-  }</pre>
+<span class="hljs-keyword" style="color: rgb(149, 65, 33);">for</span> (let i = <span class="hljs-number" style="color: rgb(64, 160, 112);">0</span>; i &lt; <span class="hljs-number" style="color: rgb(64, 160, 112);">3</span>; i++) {
+  setTimeout(<span class="hljs-function"><span class="hljs-params" style="color: rgb(0, 0, 255);">()</span> =&gt;</span> <span class="hljs-built_in" style="color: rgb(0, 134, 179);">console</span>.log(i), <span class="hljs-number" style="color: rgb(64, 160, 112);">1</span>)
+}</pre>
     `,
     possiblAnswer: [
       '0 1 2 и 0 1 2',
@@ -52,8 +52,8 @@ export const data = [
   perimeter: () =&gt; <span class="hljs-number" style="color: rgb(64, 160, 112);">2</span> * Math.<span class="hljs-literal" style="color: rgb(149, 65, 33);">PI</span> * <span class="hljs-keyword" style="color: rgb(149, 65, 33);">this</span>.radius
 }
   
-  console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(<span class="hljs-built_in" style="color: rgb(0, 134, 179);">shape</span>.diameter())
-  console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(<span class="hljs-built_in" style="color: rgb(0, 134, 179);">shape</span>.perimeter())</pre>
+console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(<span class="hljs-built_in" style="color: rgb(0, 134, 179);">shape</span>.diameter())
+console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(<span class="hljs-built_in" style="color: rgb(0, 134, 179);">shape</span>.perimeter())</pre>
     `,
     possiblAnswer: [
       '20 и 62.83185307179586',
@@ -159,17 +159,17 @@ console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(
     id: '10',
     question: 'Каким будет вывод?',
     codeExample: `
-    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(0, 0, 0); background: rgb(248, 248, 255);"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 65, 33);">function</span> <span class="hljs-title" style="color: rgb(68, 85, 136); font-weight: 700;">Person</span>(<span class="hljs-params" style="color: rgb(0, 0, 255);">firstName, lastName</span>) </span>{
-      <span class="hljs-keyword" style="color: rgb(149, 65, 33);">this</span>.firstName = firstName
-      <span class="hljs-keyword" style="color: rgb(149, 65, 33);">this</span>.lastName = lastName
-    }
-    
-    <span class="hljs-keyword" style="color: rgb(149, 65, 33);">const</span> person = <span class="hljs-keyword" style="color: rgb(149, 65, 33);">new</span> Person(<span class="hljs-string" style="color: rgb(33, 145, 97);">"John"</span>, <span class="hljs-string" style="color: rgb(33, 145, 97);">"Smith"</span>)
-    Person.getFullName = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 65, 33);">function</span> (<span class="hljs-params" style="color: rgb(0, 0, 255);"></span>) </span>{
-      <span class="hljs-keyword" style="color: rgb(149, 65, 33);">return</span> <span class="hljs-string" style="color: rgb(33, 145, 97);">&apos;<span class="hljs-subst" style="color: rgb(149, 65, 33);">&dollar;{this.firstName}</span> <span class="hljs-subst" style="color: rgb(149, 65, 33);">&dollar;{this.lastName}</span>&apos;</span>
-    }
-    
-    <span class="hljs-built_in" style="color: rgb(0, 134, 179);">console</span>.log(person.getFullName())</pre>
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(0, 0, 0); background: rgb(248, 248, 255);"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 65, 33);">function</span> <span class="hljs-title" style="color: rgb(68, 85, 136); font-weight: 700;">Person</span>(<span class="hljs-params" style="color: rgb(0, 0, 255);">firstName, lastName</span>) </span>{
+  <span class="hljs-keyword" style="color: rgb(149, 65, 33);">this</span>.firstName = firstName
+  <span class="hljs-keyword" style="color: rgb(149, 65, 33);">this</span>.lastName = lastName
+}
+
+<span class="hljs-keyword" style="color: rgb(149, 65, 33);">const</span> person = <span class="hljs-keyword" style="color: rgb(149, 65, 33);">new</span> Person(<span class="hljs-string" style="color: rgb(33, 145, 97);">"John"</span>, <span class="hljs-string" style="color: rgb(33, 145, 97);">"Smith"</span>)
+Person.getFullName = <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 65, 33);">function</span> (<span class="hljs-params" style="color: rgb(0, 0, 255);"></span>) </span>{
+  <span class="hljs-keyword" style="color: rgb(149, 65, 33);">return</span> <span class="hljs-string" style="color: rgb(33, 145, 97);">&apos;<span class="hljs-subst" style="color: rgb(149, 65, 33);">&dollar;{this.firstName}</span> <span class="hljs-subst" style="color: rgb(149, 65, 33);">&dollar;{this.lastName}</span>&apos;</span>
+}
+
+<span class="hljs-built_in" style="color: rgb(0, 134, 179);">console</span>.log(person.getFullName())</pre>
     `,
     possiblAnswer: ['ошибка', '" "', 'John Smith', 'undefined undefined'],
     correctAnswer: 'ошибка',
@@ -495,16 +495,16 @@ console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(
     question: 'Каким будет вывод?',
     codeExample: `
     <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(0, 0, 0); background: rgb(248, 248, 255);">(() =&gt; {
-      let x, y
-      try {
-        throw new Error()
-      } catch (<span class="hljs-name" style="color: navy; font-weight: 400;">x</span>) {
-        (<span class="hljs-name" style="color: navy; font-weight: 400;">x</span> = <span class="hljs-number" style="color: rgb(64, 160, 112);">1</span>), (<span class="hljs-name" style="color: navy; font-weight: 400;">y</span> = <span class="hljs-number" style="color: rgb(64, 160, 112);">2</span>)
-        console.log(<span class="hljs-name" style="color: navy; font-weight: 400;">x</span>)
-      }
-      console.log(<span class="hljs-name" style="color: navy; font-weight: 400;">x</span>)
-      console.log(<span class="hljs-name" style="color: navy; font-weight: 400;">y</span>)
-    })()</pre>
+  let x, y
+  try {
+    throw new Error()
+  } catch (<span class="hljs-name" style="color: navy; font-weight: 400;">x</span>) {
+    (<span class="hljs-name" style="color: navy; font-weight: 400;">x</span> = <span class="hljs-number" style="color: rgb(64, 160, 112);">1</span>), (<span class="hljs-name" style="color: navy; font-weight: 400;">y</span> = <span class="hljs-number" style="color: rgb(64, 160, 112);">2</span>)
+    console.log(<span class="hljs-name" style="color: navy; font-weight: 400;">x</span>)
+  }
+  console.log(<span class="hljs-name" style="color: navy; font-weight: 400;">x</span>)
+  console.log(<span class="hljs-name" style="color: navy; font-weight: 400;">y</span>)
+})()</pre>
     `,
     possiblAnswer: [
       '1 undefined 2',

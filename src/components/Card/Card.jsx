@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { data } from '../../data/data';
+import LongMenu from 'components/Menu/Menu';
 import {
   Container,
   ButtonContainer,
@@ -44,6 +45,7 @@ export const Card = () => {
   return (
     <Background>
       <Container>
+        <LongMenu currentId={id} />
         <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
         <Question>{question}</Question>
 
@@ -52,6 +54,13 @@ export const Card = () => {
         ></CodeExmpContainer>
 
         <ButtonContainer>
+          <NextBtn
+            type="button"
+            disabled={disNextBtn}
+            onClick={handelClickNextBtn}
+          >
+            Далее
+          </NextBtn>
           {possiblAnswer.map((answer, index) => {
             return (
               <Button
@@ -67,14 +76,6 @@ export const Card = () => {
             );
           })}
         </ButtonContainer>
-
-        <NextBtn
-          type="button"
-          disabled={disNextBtn}
-          onClick={handelClickNextBtn}
-        >
-          Далее
-        </NextBtn>
       </Container>
     </Background>
   );
