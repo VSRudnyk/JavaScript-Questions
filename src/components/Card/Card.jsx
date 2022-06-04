@@ -3,22 +3,24 @@ import { data } from '../../data/data';
 import {
   Container,
   ButtonContainer,
-  Pre,
   Button,
   QuestionNumber,
   NextBtn,
   Question,
   Background,
+  CodeExmpContainer,
 } from './Card.styled';
 
 export const Card = () => {
   const [disabled, setDisabled] = useState(false);
+  const [disNextBtn, setDisNextBtn] = useState(false);
   const [id, setId] = useState(1);
 
   const currentCard = data.find(card => card.id === String(id));
   const { question, codeExample, possiblAnswer, correctAnswer } = currentCard;
 
   const handelClickNextBtn = () => {
+    data.length - 1 === id && setDisNextBtn(true);
     setId(prev => prev + 1);
     setDisabled(false);
     const elements = document.querySelectorAll('#answer');
@@ -45,7 +47,9 @@ export const Card = () => {
         <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
         <Question>{question}</Question>
 
-        <Pre>{codeExample}</Pre>
+        <CodeExmpContainer
+          dangerouslySetInnerHTML={{ __html: codeExample }}
+        ></CodeExmpContainer>
 
         <ButtonContainer>
           {possiblAnswer.map((answer, index) => {
@@ -64,7 +68,11 @@ export const Card = () => {
           })}
         </ButtonContainer>
 
-        <NextBtn type="button" onClick={handelClickNextBtn}>
+        <NextBtn
+          type="button"
+          disabled={disNextBtn}
+          onClick={handelClickNextBtn}
+        >
           Далее
         </NextBtn>
       </Container>
