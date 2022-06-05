@@ -73,6 +73,7 @@ export const Question = styled.h2`
 `;
 
 export const Background = styled.div`
+  height: 100vh;
   background-size: cover;
   background-image: url(${background});
 `;

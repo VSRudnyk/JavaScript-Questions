@@ -514,13 +514,13 @@ console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(
     ],
     correctAnswer: '1 undefined 2',
   },
-  // {
-  //   id: '31',
-  //   question: 'Каким будет вывод?',
-  //   codeExample: `
+  {
+    id: '32',
+    question: 'Каким будет вывод?',
+    codeExample: `
 
-  //   `,
-  //   possiblAnswer: ['', '', '', ''],
-  //   correctAnswer: '',
-  // },
+    `,
+    possiblAnswer: ['', '', '', ''],
+    correctAnswer: '',
+  },
 ];

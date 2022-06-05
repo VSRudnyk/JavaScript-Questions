@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { data } from '../../data/data';
-import LongMenu from 'components/Menu/Menu';
+import LongMenu from 'components/Menu/LongMenu';
+import { ResultPage } from 'components/ResultPage/ResultPage';
 import {
   Container,
   ButtonContainer,
@@ -13,17 +14,20 @@ import {
 } from './Card.styled';
 
 export const Card = () => {
+  const totalCards = data.length;
   const [disabled, setDisabled] = useState(false);
-  const [disNextBtn, setDisNextBtn] = useState(false);
   const [id, setId] = useState(1);
+  const [scoring, setScoring] = useState(0);
+  const [resultPage, setResultPage] = useState(false);
 
   const currentCard = data.find(card => card.id === String(id));
   const { question, codeExample, possiblAnswer, correctAnswer } = currentCard;
 
   const handelClickNextBtn = () => {
-    data.length - 1 === id && setDisNextBtn(true);
     setId(prev => prev + 1);
     setDisabled(false);
+
+    data.length - 1 === id && setResultPage(true);
     const elements = document.querySelectorAll('#answer');
     elements.forEach(element => {
       element.classList.remove('green');
@@ -36,50 +40,51 @@ export const Card = () => {
     if (selectedAnswer === correctAnswer) {
       e.target.classList.add('green');
       setDisabled(true);
+      setScoring(prev => prev + 1);
     } else {
       e.target.classList.add('red');
       setDisabled(true);
     }
   };
 
-  const handelChoice = id => {
-    setId(id);
+  const handelChoiceQuestion = id => {
+    setId(Number(id));
   };
 
   return (
     <Background>
-      <Container>
-        <LongMenu currentId={id} onChoice={handelChoice} />
-        <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
-        <Question>{question}</Question>
+      {resultPage ? (
+        <ResultPage total={totalCards} scoring={scoring} />
+      ) : (
+        <Container>
+          <LongMenu currentId={id} onChoice={handelChoiceQuestion} />
+          <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
+          <Question>{question}</Question>
 
-        <CodeExmpContainer
-          dangerouslySetInnerHTML={{ __html: codeExample }}
-        ></CodeExmpContainer>
+          <CodeExmpContainer
+            dangerouslySetInnerHTML={{ __html: codeExample }}
+          ></CodeExmpContainer>
 
-        <ButtonContainer>
-          <NextBtn
-            type="button"
-            disabled={disNextBtn}
-            onClick={handelClickNextBtn}
-          >
-            Далее
-          </NextBtn>
-          {possiblAnswer.map((answer, index) => {
-            return (
-              <Button
-                onClick={handelClick}
-                id="answer"
-                disabled={disabled}
-                data-answer={answer}
-                key={index}
-              >
-                {answer}
-              </Button>
-            );
-          })}
-        </ButtonContainer>
-      </Container>
+          <ButtonContainer>
+            <NextBtn type="button" onClick={handelClickNextBtn}>
+              {data.length - 1 === id ? 'Рузультат' : 'Далее'}
+            </NextBtn>
+            {possiblAnswer.map((answer, index) => {
+              return (
+                <Button
+                  onClick={handelClick}
+                  id="answer"
+                  disabled={disabled}
+                  data-answer={answer}
+                  key={index}
+                >
+                  {answer}
+                </Button>
+              );
+            })}
+          </ButtonContainer>
+        </Container>
+      )}
     </Background>
   );
 };
