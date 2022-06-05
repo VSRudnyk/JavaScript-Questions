@@ -42,10 +42,14 @@ export const Card = () => {
     }
   };
 
+  const handelChoice = id => {
+    setId(id);
+  };
+
   return (
     <Background>
       <Container>
-        <LongMenu currentId={id} />
+        <LongMenu currentId={id} onChoice={handelChoice} />
         <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
         <Question>{question}</Question>
 
@@ -65,7 +69,6 @@ export const Card = () => {
             return (
               <Button
                 onClick={handelClick}
-                // className="btn"
                 id="answer"
                 disabled={disabled}
                 data-answer={answer}

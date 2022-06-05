@@ -5,14 +5,16 @@ import MenuItem from '@mui/material/MenuItem';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { data } from 'data/data';
 
-export default function LongMenu({ currentId }) {
+export default function LongMenu({ currentId, onChoice }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = event => {
+    onChoice(event.target.dataset.id);
     setAnchorEl(null);
   };
 
@@ -38,7 +40,7 @@ export default function LongMenu({ currentId }) {
         onClose={handleClose}
         PaperProps={{
           style: {
-            maxHeight: '100%',
+            maxHeight: '90%',
             width: '20ch',
           },
         }}
@@ -49,7 +51,7 @@ export default function LongMenu({ currentId }) {
             selected={option.id === String(currentId)}
             onClick={handleClose}
           >
-            <p>Вопрос №{option.id}</p>
+            <p data-id={option.id}>Вопрос №{option.id}</p>
           </MenuItem>
         ))}
       </Menu>
