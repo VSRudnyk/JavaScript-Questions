@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/JavaScript-Questions/static/css/main.90f30332.css",
-    "main.js": "/JavaScript-Questions/static/js/main.bbacc465.js",
+    "main.js": "/JavaScript-Questions/static/js/main.df796690.js",
     "static/media/background.jpg": "/JavaScript-Questions/static/media/background.d15462ae73c5e2bb34f0.jpg",
     "index.html": "/JavaScript-Questions/index.html",
+    "static/media/javascript-1.svg": "/JavaScript-Questions/static/media/javascript-1.a92a31fa063e27ed114896f2cb6ea7f6.svg",
     "main.90f30332.css.map": "/JavaScript-Questions/static/css/main.90f30332.css.map",
-    "main.bbacc465.js.map": "/JavaScript-Questions/static/js/main.bbacc465.js.map"
+    "main.df796690.js.map": "/JavaScript-Questions/static/js/main.df796690.js.map"
   },
   "entrypoints": [
     "static/css/main.90f30332.css",
-    "static/js/main.bbacc465.js"
+    "static/js/main.df796690.js"
   ]
 }
