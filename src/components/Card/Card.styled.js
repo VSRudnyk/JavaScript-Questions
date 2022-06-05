@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 export const ButtonContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 50%;
@@ -16,7 +14,7 @@ export const Button = styled.button`
   cursor: pointer;
   display: block;
   height: 50px;
-
+  background-color: #fff;
   border-radius: 8px;
   border: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -35,6 +33,7 @@ export const NextBtn = styled.button`
   right: 0;
   top: -60px;
   padding: 12px;
+  background-color: #fff;
   border-radius: 8px;
   border: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,

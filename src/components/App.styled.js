@@ -9,7 +9,7 @@ export const Background = styled.div`
 
 export const Container = styled.div`
   position: relative;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
