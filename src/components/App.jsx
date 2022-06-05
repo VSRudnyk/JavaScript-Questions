@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 // import { lazy } from 'react';
-
+import { Background, Container } from './App.styled';
 import { Card } from './Card/Card';
 import { WelcomePage } from './WelcomPage/WelcomPage';
 
@@ -10,11 +10,15 @@ import { WelcomePage } from './WelcomPage/WelcomPage';
 
 export const App = () => {
   return (
-    <Routes>
-      <Route index element={<WelcomePage />} />
-      <Route path="card" element={<Card />} />
+    <Background>
+      <Container>
+        <Routes>
+          <Route index element={<WelcomePage />} />
+          <Route path="card" element={<Card />} />
 
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Container>
+    </Background>
   );
 };

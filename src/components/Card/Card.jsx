@@ -3,13 +3,11 @@ import { data } from '../../data/data';
 import LongMenu from 'components/Menu/LongMenu';
 import { ResultPage } from 'components/ResultPage/ResultPage';
 import {
-  Container,
   ButtonContainer,
   Button,
   QuestionNumber,
   NextBtn,
   Question,
-  Background,
   CodeExmpContainer,
 } from './Card.styled';
 
@@ -52,11 +50,11 @@ export const Card = () => {
   };
 
   return (
-    <Background>
+    <>
       {resultPage ? (
         <ResultPage total={totalCards} scoring={scoring} />
       ) : (
-        <Container>
+        <>
           <LongMenu currentId={id} onChoice={handelChoiceQuestion} />
           <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
           <Question>{question}</Question>
@@ -83,8 +81,8 @@ export const Card = () => {
               );
             })}
           </ButtonContainer>
-        </Container>
+        </>
       )}
-    </Background>
+    </>
   );
 };
