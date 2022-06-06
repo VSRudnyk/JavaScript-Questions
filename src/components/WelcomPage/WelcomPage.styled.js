@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as JSlogo } from '../../image/javascript-1.svg';
 
 export const Container = styled.div`
-  padding-top: 150px;
+  @media screen and (min-width: 320px) {
+    padding-top: 100px;
+    overflow-y: hidden;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     height: 100%;

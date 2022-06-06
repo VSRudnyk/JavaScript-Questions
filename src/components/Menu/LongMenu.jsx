@@ -14,7 +14,9 @@ export default function LongMenu({ currentId, onChoice }) {
   };
 
   const handleClose = event => {
-    onChoice(event.target.dataset.id);
+    if (event.target.nodeName === 'P') {
+      onChoice(event.target.dataset.id);
+    }
     setAnchorEl(null);
   };
 

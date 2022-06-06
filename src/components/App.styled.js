@@ -9,15 +9,15 @@ export const Background = styled.div`
 
 export const Container = styled.div`
   position: relative;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
   height: 100vh;
 
-  @media screen and (min-width: 360px) {
-    width: 340px;
+  @media screen and (min-width: 320px) {
+    width: 300px;
   }
 
   @media screen and (min-width: 480px) {
