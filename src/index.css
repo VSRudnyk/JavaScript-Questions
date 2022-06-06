@@ -16,12 +16,12 @@ code {
 
 .green {
   color: white;
-  background-color: green;
+  background-color: green !important;
 }
 
 .red {
   color: white;
-  background-color: red;
+  background-color: red !important;
 }
 
 .list {
