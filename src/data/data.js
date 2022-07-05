@@ -518,7 +518,29 @@ console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(
     id: '32',
     question: 'Каким будет вывод?',
     codeExample: `
+    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);">const result =
+  <span class="hljs-string" style="color: rgb(136, 0, 0);">[[0, 1], [2, 3]]</span>.reduce(
+    (acc, cur) =&gt; {
+      <span class="hljs-keyword" style="font-weight: 700;">return</span> acc.concat(cur)
+    },
+    [<span class="hljs-number" style="color: rgb(136, 0, 0);">1</span>, <span class="hljs-number" style="color: rgb(136, 0, 0);">2</span>]
+  )
 
+console.log(result)</pre>
+    `,
+    possiblAnswer: [
+      '[0, 1, 2, 3, 1, 2]',
+      '[6, 1, 2]',
+      '[1, 2, 0, 1, 2, 3]',
+      '[1, 2, 6]',
+    ],
+    correctAnswer: '[1, 2, 0, 1, 2, 3]',
+  },
+  {
+    id: '33',
+    question: 'Каким будет вывод?',
+    codeExample: `
+    
     `,
     possiblAnswer: ['', '', '', ''],
     correctAnswer: '',
