@@ -25,12 +25,16 @@ export const Card = () => {
     setId(prev => prev + 1);
     setDisabled(false);
 
-    data.length - 1 === id && setResultPage(true);
+    // data.length - 1 === id && setResultPage(true);
     const elements = document.querySelectorAll('#answer');
     elements.forEach(element => {
       element.classList.remove('green');
       element.classList.remove('red');
     });
+  };
+
+  const handelClickResultBtn = () => {
+    setResultPage(true);
   };
 
   const handelClick = e => {
@@ -64,13 +68,23 @@ export const Card = () => {
           ></CodeExmpContainer>
 
           <ButtonContainer>
-            <NextBtn
-              type="button"
-              onClick={handelClickNextBtn}
-              disabled={!disabled}
-            >
-              {data.length - 1 === id ? 'Рузультат' : 'Далее'}
-            </NextBtn>
+            {data.length === id ? (
+              <NextBtn
+                type="button"
+                onClick={handelClickResultBtn}
+                disabled={!disabled}
+              >
+                Рузультат
+              </NextBtn>
+            ) : (
+              <NextBtn
+                type="button"
+                onClick={handelClickNextBtn}
+                disabled={!disabled}
+              >
+                Далее
+              </NextBtn>
+            )}
             {possiblAnswer.map((answer, index) => {
               return (
                 <Button

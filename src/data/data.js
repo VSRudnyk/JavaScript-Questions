@@ -518,14 +518,14 @@ console.<span class="hljs-built_in" style="color: rgb(0, 134, 179);">log</span>(
     id: '32',
     question: 'Каким будет вывод?',
     codeExample: `
-    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);">const result =
-  <span class="hljs-string" style="color: rgb(136, 0, 0);">[[0, 1], [2, 3]]</span>.reduce(
+    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(0, 0, 0); background: rgb(248, 248, 255);">const result =
+  <span class="hljs-string" style="color: rgb(33, 145, 97);">[[0, 1], [2, 3]]</span>.reduce(
     (acc, cur) =&gt; {
-      <span class="hljs-keyword" style="font-weight: 700;">return</span> acc.concat(cur)
+      <span class="hljs-keyword" style="color: rgb(149, 65, 33);">return</span> acc.concat(cur)
     },
-    [<span class="hljs-number" style="color: rgb(136, 0, 0);">1</span>, <span class="hljs-number" style="color: rgb(136, 0, 0);">2</span>]
+    [<span class="hljs-number" style="color: rgb(64, 160, 112);">1</span>, <span class="hljs-number" style="color: rgb(64, 160, 112);">2</span>]
   )
-
+  
 console.log(result)</pre>
     `,
     possiblAnswer: [
@@ -536,13 +536,13 @@ console.log(result)</pre>
     ],
     correctAnswer: '[1, 2, 0, 1, 2, 3]',
   },
-  {
-    id: '33',
-    question: 'Каким будет вывод?',
-    codeExample: `
-    
-    `,
-    possiblAnswer: ['', '', '', ''],
-    correctAnswer: '',
-  },
+  // {
+  //   id: '33',
+  //   question: 'Каким будет вывод?',
+  //   codeExample: `
+
+  //   `,
+  //   possiblAnswer: ['', '', '', ''],
+  //   correctAnswer: '',
+  // },
 ];
