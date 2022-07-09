@@ -64,7 +64,11 @@ export const Card = () => {
           ></CodeExmpContainer>
 
           <ButtonContainer>
-            <NextBtn type="button" onClick={handelClickNextBtn}>
+            <NextBtn
+              type="button"
+              onClick={handelClickNextBtn}
+              disabled={!disabled}
+            >
               {data.length - 1 === id ? 'Рузультат' : 'Далее'}
             </NextBtn>
             {possiblAnswer.map((answer, index) => {

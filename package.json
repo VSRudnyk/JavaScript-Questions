@@ -2,7 +2,7 @@
   "name": "questions",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://VSRudnyk.github.io/JavaScript-Questions/",
+  "homepage": "https://VSRudnyk.github.io/javascript-quiz-test/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
