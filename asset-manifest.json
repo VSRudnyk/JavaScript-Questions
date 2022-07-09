@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/JavaScript-Questions/static/css/main.793594e4.css",
-    "main.js": "/JavaScript-Questions/static/js/main.ff0ffebe.js",
-    "static/media/background.jpg": "/JavaScript-Questions/static/media/background.d15462ae73c5e2bb34f0.jpg",
-    "index.html": "/JavaScript-Questions/index.html",
-    "static/media/javascript-1.svg": "/JavaScript-Questions/static/media/javascript-1.a92a31fa063e27ed114896f2cb6ea7f6.svg",
-    "main.793594e4.css.map": "/JavaScript-Questions/static/css/main.793594e4.css.map",
-    "main.ff0ffebe.js.map": "/JavaScript-Questions/static/js/main.ff0ffebe.js.map"
+    "main.css": "/javascript-quiz-test/static/css/main.793594e4.css",
+    "main.js": "/javascript-quiz-test/static/js/main.eb99c9bf.js",
+    "static/media/background.jpg": "/javascript-quiz-test/static/media/background.d15462ae73c5e2bb34f0.jpg",
+    "index.html": "/javascript-quiz-test/index.html",
+    "static/media/javascript-1.svg": "/javascript-quiz-test/static/media/javascript-1.a92a31fa063e27ed114896f2cb6ea7f6.svg",
+    "main.793594e4.css.map": "/javascript-quiz-test/static/css/main.793594e4.css.map",
+    "main.eb99c9bf.js.map": "/javascript-quiz-test/static/js/main.eb99c9bf.js.map"
   },
   "entrypoints": [
     "static/css/main.793594e4.css",
-    "static/js/main.ff0ffebe.js"
+    "static/js/main.eb99c9bf.js"
   ]
 }
