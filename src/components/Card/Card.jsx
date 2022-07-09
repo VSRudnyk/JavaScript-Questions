@@ -9,6 +9,8 @@ import {
   NextBtn,
   Question,
   CodeExmpContainer,
+  ToMainBtn,
+  ToMainContainer,
 } from './Card.styled';
 
 export const Card = () => {
@@ -25,7 +27,6 @@ export const Card = () => {
     setId(prev => prev + 1);
     setDisabled(false);
 
-    // data.length - 1 === id && setResultPage(true);
     const elements = document.querySelectorAll('#answer');
     elements.forEach(element => {
       element.classList.remove('green');
@@ -61,7 +62,10 @@ export const Card = () => {
         <>
           <LongMenu currentId={id} onChoice={handelChoiceQuestion} />
           <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
-          <Question>{question}</Question>
+          <ToMainContainer>
+            <Question>{question}</Question>
+            <ToMainBtn to="/">На Главную</ToMainBtn>
+          </ToMainContainer>
 
           <CodeExmpContainer
             dangerouslySetInnerHTML={{ __html: codeExample }}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.div`
@@ -22,8 +23,30 @@ export const Button = styled.button`
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 `;
 
+export const ToMainContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const ToMainBtn = styled(Link)`
+  cursor: pointer;
+  background-color: #fff;
+  color: inherit;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+`;
+
 export const QuestionNumber = styled.h2`
   margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 15px;
 `;
 
@@ -41,10 +64,7 @@ export const NextBtn = styled.button`
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 `;
 
-export const Question = styled.h2`
-  margin-top: 10px;
-  margin-bottom: 25px;
-`;
+export const Question = styled.h2``;
 
 export const CodeExmpContainer = styled.div`
   font-size: 14px;
