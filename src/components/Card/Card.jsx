@@ -60,12 +60,12 @@ export const Card = () => {
         <ResultPage total={totalCards} scoring={scoring} />
       ) : (
         <>
-          <LongMenu currentId={id} onChoice={handelChoiceQuestion} />
-          <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
           <ToMainContainer>
-            <Question>{question}</Question>
+            <LongMenu currentId={id} onChoice={handelChoiceQuestion} />
             <ToMainBtn to="/">На Главную</ToMainBtn>
           </ToMainContainer>
+          <Question>{question}</Question>
+          <QuestionNumber>{`Вопрос №${id}`}</QuestionNumber>
 
           <CodeExmpContainer
             dangerouslySetInnerHTML={{ __html: codeExample }}
